@@ -394,6 +394,10 @@ span {
     opacity: 1;
 }
 
+.port-box:hover .port-image img {
+    transform: scale(1.1);
+}
+
 .port-content h3 {
     font-size: 1.5rem;
     font-weight: 1.6rem;
