@@ -441,6 +441,11 @@ span {
     outline: 2px solid var(--text-color);
 }
 
+.port-content a i {
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+}
+
 
 
 
