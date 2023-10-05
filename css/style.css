@@ -297,51 +297,26 @@ span {
     grid-template-columns: 1fr 1fr;
 }
 
-.box {
-    position: relative;
-    margin: 10px 0;
-    flex: 1 1 15rem;
+.skill-bar .bar .team {
+    width: 85%;
+    animation: team 2s;
 }
 
-.box .text {
-    text-align: center;
-    margin: 10px 0;
-    flex: 1 1 15rem;
+.skill-bar .bar .creativity {
+    width: 90%;
+    animation: creativity 3s;
 }
 
-.box .text big{
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+.skill-bar .bar .project {
+    width: 90%;
+    animation: project 4s;
 }
 
-.box .text small{
-    display: block;
-    font-size: 1.6rem;
+.skill-bar .bar .communication {
+    width: 80%;
+    animation: communication 5s;
 }
 
-.circle {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--text-color);
-}
-
-.circle .points {
-    width: 2px;
-    height: 10px;
-    background-color: var(--bg-color);
-    position: absolute;
-    border-radius: 3px;
-    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
-    animation: glow 0.04s linear forwards;
-    animation-delay: calc(var(--i)*0.05s);
-}
 
 /*portfolio section*/
 .filter-buttons {
@@ -498,6 +473,42 @@ span {
     }
     100%{
         width: 95%;
+    }
+}
+
+@keyframes team {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes creativity {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes project {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes communication {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
     }
 }
 
